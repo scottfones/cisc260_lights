@@ -20,7 +20,7 @@ _start:
 	mov r0,#7
 	mov r1,#7
 	bl setPixel
-	#set pixel 9,0 to the blue color stored in r6
+	#set pixel 0,0 to the blue color stored in r6
 	mov r2,r6
 	mov r0,#0
 	mov r1,#0
