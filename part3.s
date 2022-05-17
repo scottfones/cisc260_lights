@@ -31,8 +31,9 @@ loop:
     cmp r0,r1
     beq color_pixel
 
+inc_j:
     #increment j
-inc_j:    add r1,r1,#1
+    add r1,r1,#1
     b loop
 
 nline:
@@ -69,7 +70,7 @@ color_pixel:
     mov r1,r8
     ldr r3,=ROWCNT
     ldr r3,[r3]
-    
+
     b inc_j
 
 
