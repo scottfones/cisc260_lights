@@ -7,4 +7,3 @@ _start:
 	cmp r0,#0
 	blt _start_exit
 
-    
