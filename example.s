@@ -1,11 +1,12 @@
+
 .global _start
 .text
 _start:
 	#open frame buffer 1
 	mov r0,#1
 	bl openfb
-	cmp r0,#0
-	blt _start_exit
+	#cmp r0,#0
+	#blt _start_exit
 
 	#get the color blue and store it in r6
 	mov r8,r0
@@ -20,7 +21,7 @@ _start:
 	mov r0,#7
 	mov r1,#7
 	bl setPixel
-	#set pixel 0,0 to the blue color stored in r6
+	#set pixel 9,0 to the blue color stored in r6
 	mov r2,r6
 	mov r0,#0
 	mov r1,#0

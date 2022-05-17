@@ -2,7 +2,7 @@
 	FILENAME: .asciz "/dev/fb1"
 	FD: .word 0
 	FB: .word 0
-	
+
 .global openfb
 .global closefb
 .global getColor
@@ -33,7 +33,7 @@ openfb:	ldr r8,=FILENAME
 	str r0,[r1,#0]
 openfb_exit:
 	mov pc,lr
-	
+
 #closefb() Unmaps file and closes it.  Returns the status code for closing the file
 closefb:
 	ldr r0,=FB
@@ -56,7 +56,7 @@ getColor:
 	add r4,r4,r2
 	mov r0,r4
 	mov pc,lr
-	
+
 #setPixel(x,y,color) where x,y 0-7 and color returned by getcolor.  Turns on that light
 setPixel:
 	ldr r3,=FB
