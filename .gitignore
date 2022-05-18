@@ -1,0 +1,10 @@
+# *.o files
+*.o
+
+# binaries
+clear
+example
+lights
+part2
+part3
+part4
