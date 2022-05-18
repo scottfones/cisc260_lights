@@ -18,7 +18,7 @@ _start:
     #r0 = i, r1 = j, r2 = color
     mov r0,#0
     mov r1,#0
-    mov r2,#0
+    mov r2,r10
     ldr r3,=ROWCNT
     ldr r3,[r3]
 
